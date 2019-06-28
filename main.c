@@ -14,7 +14,7 @@ void acervo() {
 	Color("blue1");
 	puts("1) Cadastrar novo livro\n2) Editar livro\n3) Remover livro cadastrado\n4) Listar todos os livros\n5) Voltar ao menu\n");
 	resetColor();
-	puts("Opção:");
+	puts("OpÃ§Ã£o:");
 	
 	while(1) {
 		printf("-> ");
@@ -25,7 +25,7 @@ void acervo() {
 			return;
 		}
 		else if(op<1||op>5)
-		    puts("[!] Inválido");
+		    puts("[!] InvÃ¡lido");
 		else
 			break;
 	}
@@ -63,7 +63,7 @@ void alunos() {
 	Color("yellow2");
 	puts("1) Cadastrar novo aluno\n2) Editar aluno\n3) Remover aluno cadastrado\n4) Listar todos os Alunos\n5) Voltar ao menu\n");
 	resetColor();
-	puts("Opção:");
+	puts("OpÃ§Ã£o:");
 	
 	while(1) {
 		printf("-> ");
@@ -75,7 +75,7 @@ void alunos() {
 		}   
 		else if(op<1||op>5) {
 			Color("red2");
-		    puts("[!] Inválido");
+		    puts("[!] InvÃ¡lido");
 		   	resetColor();
 		}
 		else
@@ -95,7 +95,7 @@ void alunos() {
 	} else if(op==2) {
 		clear();
 		if(editarAluno(&aluno))
-		    puts("\n[*] Edição concluida [*]");
+		    puts("\n[*] EdiÃ§Ã£o concluida [*]");
 	} else if(op==3) {
 		clear();
 		if(removerDado("alunos_cadastrados.txt",-1)){
@@ -122,9 +122,9 @@ void emprestimos() {
 	Color("blue2");
 	puts("\n\t[*] Menu de Emprestimos [*]\n");
 	Color("green2");
-	puts("1) Novo emprestimo\n2) Confirmar devolução do livro\n3) Cancelar emprestimos\n4) Listar Emprestimos\n5) Voltar ao menu\n");
+	puts("1) Novo emprestimo\n2) Confirmar devoluÃ§Ã£o do livro\n3) Cancelar emprestimos\n4) Listar Emprestimos\n5) Voltar ao menu\n");
 	resetColor();
-	puts("Opção:");
+	puts("OpÃ§Ã£o:");
 	while(1) {
 		printf("-> ");
 		scanf("%d",&op);
@@ -136,7 +136,7 @@ void emprestimos() {
 		}   
 		else if(op<1||op>5){
 	 		Color("red2");
-		    puts("[!] Inválido");
+		    puts("[!] InvÃ¡lido");
 		    Color("green2");
 		}
 		else break;
@@ -181,7 +181,7 @@ void emprestimos() {
 void menu() {
 	int op;
 	
-	/*cabeçalho do programa*/
+	/*cabeÃ§alho do programa*/
 	puts("*********************************************************\n*\t\t\t\t\t\t\t*");
  	Color("blue2");
  	printf("\t\t[*] Biblioteca UEPB [*]");
@@ -192,7 +192,7 @@ void menu() {
 	Color("yellow2");
 	puts("\n1) Acervo (Livros)\n2) Alunos\n3) Emprestimos\n4) Sair\n");
 	resetColor();
-	puts("Opção:");
+	puts("OpÃ§Ã£o:");
 	
 	while(1) {
 		printf("-> ");
@@ -211,7 +211,7 @@ void menu() {
 			emprestimos();
 		} else {
   		    Color("red2");
-		    puts("[!] Inválido");
+		    puts("[!] InvÃ¡lido");
 		   	resetColor();
 			continue;
 		}
@@ -223,31 +223,12 @@ void menu() {
 int main(void) {
 	setlocale(LC_ALL,"");
 	resetColor();
+
 	menu();
+	
 	Color("blue2");
 	puts("\n\t\t[*] Programa Finalizado [*]");
 	resetColor();
-	/*
-	FAZER:
-	-cores;
-	-emprestimos;
-	-ajeitar bugs;
-	-comentar codigo;
-	MEU DEUS ME AJUDA;
-	*/
 
-	
-										
-	/*iniciar();
-	
-	resetColor();
-
-	ALUNOS al;
-	
-	al = cadastrarAluno();
-	armazenarAluno(al);
-	
-	editarAluno(&al);
-	*/
 	return 0;
 }
