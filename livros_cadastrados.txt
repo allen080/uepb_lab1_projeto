@@ -1,0 +1,13 @@
+
+codigo do livro: 0
+nome do livro: 
+nome do autor principal: JK
+area do conhecimento: @
+exemplares para emprestimo: 0
+
+codigo do livro: 999
+nome do livro: livro_teste
+nome do autor principal: teste
+area do conhecimento: exatas
+exemplares para emprestimo: 3
+

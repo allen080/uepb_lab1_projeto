@@ -1,0 +1,14 @@
+
+
+matricula do aluno: 555
+codigo do livro: 999
+nome do livro: livro_teste
+data do emprestimo: 28/6/2019
+data de devolução: 30/6/2019
+
+matricula do aluno: 555
+codigo do livro: 999
+nome do livro: livro_teste
+data do emprestimo: 28/6/2019
+data de devolução: 29/6/2019
+
